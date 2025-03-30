@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/styles.css">
+  <title>Frontend Mentor | Todo app</title>
+</head>
+<body class="dark-theme">
+  <div class="container">
+    <header>
+      <h1>TODO</h1>
+      <button class="theme-toggle" aria-label="Toggle light/dark mode">
+        <img src="./images/icon-sun.svg" alt="Toggle to light mode" class="theme-icon">
+      </button>
+    </header>
+    <main>
+      <form class="todo-input" aria-label="Add a new todo">
+        <input type="text" placeholder="Create a new todo..." aria-label="Add a new todo">
+      </form>
+      <ul class="todo-list">
+        <li class="todo-item completed" draggable="true">
+          <input type="checkbox" id="todo-1" checked aria-label="Mark as complete">
+          <label for="todo-1">Complete online JavaScript course</label>
+          <button class="delete-btn" aria-label="Delete todo">
+            <img src="./images/icon-cross.svg" alt="Delete">
+          </button>
+        </li>
+        <li class="todo-item" draggable="true">
+          <input type="checkbox" id="todo-2" aria-label="Mark as complete">
+          <label for="todo-2">Jog around the park 3x</label>
+          <button class="delete-btn" aria-label="Delete todo">
+            <img src="./images/icon-cross.svg" alt="Delete">
+          </button>
+        </li>
+        <li class="todo-item" draggable="true">
+          <input type="checkbox" id="todo-3" aria-label="Mark as complete">
+          <label for="todo-3">10 minutes meditation</label>
+          <button class="delete-btn" aria-label="Delete todo">
+            <img src="./images/icon-cross.svg" alt="Delete">
+          </button>
+        </li>
+        <li class="todo-item" draggable="true">
+          <input type="checkbox" id="todo-4" aria-label="Mark as complete">
+          <label for="todo-4">Read for 1 hour</label>
+          <button class="delete-btn" aria-label="Delete todo">
+            <img src="./images/icon-cross.svg" alt="Delete">
+          </button>
+        </li>
+        <li class="todo-item" draggable="true">
+          <input type="checkbox" id="todo-5" aria-label="Mark as complete">
+          <label for="todo-5">Pick up groceries</label>
+          <button class="delete-btn" aria-label="Delete todo">
+            <img src="./images/icon-cross.svg" alt="Delete">
+          </button>
+        </li>
+        <li class="todo-item" draggable="true">
+          <input type="checkbox" id="todo-6" aria-label="Mark as complete">
+          <label for="todo-6">Complete Todo App on Frontend Mentor</label>
+          <button class="delete-btn" aria-label="Delete todo">
+            <img src="./images/icon-cross.svg" alt="Delete">
+          </button>
+        </li>
+      </ul>
+      <footer class="todo-footer">
+        <span class="items-left">5 items left</span>
+        <div class="filters">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="active">Active</button>
+          <button class="filter-btn" data-filter="completed">Completed</button>
+        </div>
+        <button class="clear-completed">Clear Completed</button>
+      </footer>
+    </main>
+    <p class="drag-drop">Drag and drop to reorder list</p>
+  </div>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Jeremiah Boateng</a>.
+  </div>
+  <script src="./js/script.js"></script>
+</body>
+</html>
